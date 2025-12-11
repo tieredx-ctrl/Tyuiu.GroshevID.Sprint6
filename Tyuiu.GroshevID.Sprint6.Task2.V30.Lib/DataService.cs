@@ -12,7 +12,7 @@ namespace Tyuiu.GroshevID.Sprint6.Task2.V30.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
                 F = (5*x + 2.5) / (Math.Sin(x) + 3) + 2*x + Math.Cos(x);
-                values.Add(F);
+                values.Add(Math.Round(F, 2));
             }
 
             return values.ToArray();
